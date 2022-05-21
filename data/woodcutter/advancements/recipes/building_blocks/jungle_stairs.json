@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:jungle_stairs_from_jungle_log_woodcutting",
+      "woodcutter:jungle_stairs_from_jungle_planks_woodcutting",
+      "woodcutter:jungle_stairs_from_jungle_wood_woodcutting",
+      "woodcutter:jungle_stairs_from_stripped_jungle_log_woodcutting",
+      "woodcutter:jungle_stairs_from_stripped_jungle_wood_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_jungle_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:jungle_logs"
+          }
+        ]
+      }
+    },
+    "has_jungle_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:jungle_planks"]
+          }
+        ]
+      }
+    },
+    "has_jungle_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:jungle_stairs_from_jungle_log_woodcutting"
+      }
+    },
+    "has_jungle_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:jungle_stairs_from_jungle_planks_woodcutting"
+      }
+    },
+    "has_jungle_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:jungle_stairs_from_jungle_wood_woodcutting"
+      }
+    },
+    "has_stripped_jungle_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:jungle_stairs_from_stripped_jungle_log_woodcutting"
+      }
+    },
+    "has_stripped_jungle_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:jungle_stairs_from_stripped_jungle_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_jungle_log_recipe",
+      "has_jungle_planks_recipe",
+      "has_jungle_wood_recipe",
+      "has_stripped_jungle_log_recipe",
+      "has_stripped_jungle_wood_recipe",
+      "has_jungle_logs",
+      "has_jungle_planks"
+    ]
+  ]
+}

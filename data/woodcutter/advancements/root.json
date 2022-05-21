@@ -1,0 +1,22 @@
+{
+  "parent": "global:satyrnidae/author",
+  "display": {
+      "icon": {
+          "item": "minecraft:stonecutter"
+      },
+      "title": "Woodcutter",
+      "description": [
+        "How much wood would a stonecutter cut",
+        "if a stonecutter could cut wood?",
+        "A lot, seemingly!"
+      ],
+      "announce_to_chat": false,
+      "show_toast": false,
+      "hidden": false
+  },
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

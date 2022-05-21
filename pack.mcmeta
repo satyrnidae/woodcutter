@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 8,
+    "description": "Woodcutter"
+  },
+  "meta": {
+    "author": "Isabel Maskrey (saturniidae)",
+    "website": "https://satyrn.dev",
+    "version": "1.0.0",
+    "baseArchiveName": "woodcutter"
+  }
+}

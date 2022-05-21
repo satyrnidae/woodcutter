@@ -1,0 +1,32 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_crimson_stem_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_crimson_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crimson_stem"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_crimson_stem_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson_stem",
+      "has_the_recipe"
+    ]
+  ]
+}

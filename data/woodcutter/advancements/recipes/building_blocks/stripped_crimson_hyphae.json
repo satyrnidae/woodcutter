@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_crimson_hyphae_from_crimson_hyphae_woodcutting",
+      "woodcutter:stripped_crimson_hyphae_from_stripped_crimson_stem_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_crimson_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crimson_hyphae"]
+          }
+        ]
+      }
+    },
+    "has_stripped_crimson_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_crimson_stem"]
+          }
+        ]
+      }
+    },
+    "has_stripped_crimson_hyphae_from_crimson_hyphae_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_crimson_hyphae_from_crimson_hyphae_woodcutting"
+      }
+    },
+    "has_stripped_crimson_hyphae_from_stripped_crimson_stem_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_crimson_hyphae_from_stripped_crimson_stem_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson_wood",
+      "has_stripped_crimson_stem",
+      "has_stripped_crimson_hyphae_from_crimson_hyphae_woodcutting_recipe",
+      "has_stripped_crimson_hyphae_from_stripped_crimson_stem_woodcutting_recipe"
+    ]
+  ]
+}

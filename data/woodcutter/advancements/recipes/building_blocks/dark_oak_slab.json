@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:dark_oak_slab_from_dark_oak_log_woodcutting",
+      "woodcutter:dark_oak_slab_from_dark_oak_planks_woodcutting",
+      "woodcutter:dark_oak_slab_from_dark_oak_wood_woodcutting",
+      "woodcutter:dark_oak_slab_from_stripped_dark_oak_log_woodcutting",
+      "woodcutter:dark_oak_slab_from_stripped_dark_oak_wood_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_dark_oak_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:dark_oak_logs"
+          }
+        ]
+      }
+    },
+    "has_dark_oak_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:dark_oak_planks"]
+          }
+        ]
+      }
+    },
+    "has_dark_oak_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:dark_oak_slab_from_dark_oak_log_woodcutting"
+      }
+    },
+    "has_dark_oak_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:dark_oak_slab_from_dark_oak_planks_woodcutting"
+      }
+    },
+    "has_dark_oak_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:dark_oak_slab_from_dark_oak_wood_woodcutting"
+      }
+    },
+    "has_stripped_dark_oak_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:dark_oak_slab_from_stripped_dark_oak_log_woodcutting"
+      }
+    },
+    "has_stripped_dark_oak_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:dark_oak_slab_from_stripped_dark_oak_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dark_oak_log_recipe",
+      "has_dark_oak_planks_recipe",
+      "has_dark_oak_wood_recipe",
+      "has_stripped_dark_oak_log_recipe",
+      "has_stripped_dark_oak_wood_recipe",
+      "has_dark_oak_logs",
+      "has_dark_oak_planks"
+    ]
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_warped_hyphae_from_warped_hyphae_woodcutting",
+      "woodcutter:stripped_warped_hyphae_from_stripped_warped_stem_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_warped_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:warped_hyphae"]
+          }
+        ]
+      }
+    },
+    "has_stripped_warped_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_warped_stem"]
+          }
+        ]
+      }
+    },
+    "has_stripped_warped_hyphae_from_warped_hyphae_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_warped_hyphae_from_warped_hyphae_woodcutting"
+      }
+    },
+    "has_stripped_warped_hyphae_from_stripped_warped_stem_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_warped_hyphae_from_stripped_warped_stem_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_wood",
+      "has_stripped_warped_stem",
+      "has_stripped_warped_hyphae_from_warped_hyphae_woodcutting_recipe",
+      "has_stripped_warped_hyphae_from_stripped_warped_stem_woodcutting_recipe"
+    ]
+  ]
+}

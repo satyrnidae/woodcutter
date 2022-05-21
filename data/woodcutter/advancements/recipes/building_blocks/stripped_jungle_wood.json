@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_jungle_wood_from_jungle_wood_woodcutting",
+      "woodcutter:stripped_jungle_wood_from_stripped_jungle_log_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_jungle_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:jungle_wood"]
+          }
+        ]
+      }
+    },
+    "has_stripped_jungle_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_jungle_log"]
+          }
+        ]
+      }
+    },
+    "has_stripped_jungle_wood_from_jungle_wood_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_jungle_wood_from_jungle_wood_woodcutting"
+      }
+    },
+    "has_stripped_jungle_wood_from_stripped_jungle_log_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_jungle_wood_from_stripped_jungle_log_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_jungle_wood",
+      "has_stripped_jungle_log",
+      "has_stripped_jungle_wood_from_jungle_wood_woodcutting_recipe",
+      "has_stripped_jungle_wood_from_stripped_jungle_log_woodcutting_recipe"
+    ]
+  ]
+}

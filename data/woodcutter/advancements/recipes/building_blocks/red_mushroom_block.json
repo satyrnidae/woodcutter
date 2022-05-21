@@ -1,0 +1,61 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:red_mushroom_block_from_red_mushroom",
+      "woodcutter:red_mushroom_block_from_mushroom_stem",
+      "woodcutter:red_mushroom_block_from_mushroom_stem_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_red_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_mushroom"
+            ]
+          }
+        ]
+      }
+    },
+    "has_mushroom_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:mushroom_stem"]
+          }
+        ]
+      }
+    },
+    "has_red_mushroom_block_from_red_mushroom_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:red_mushroom_block_from_red_mushroom"
+      }
+    },
+    "has_red_mushroom_block_from_mushroom_stem_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:red_mushroom_block_from_mushroom_stem"
+      }
+    },
+    "has_red_mushroom_block_from_mushroom_stem_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:red_mushroom_block_from_mushroom_stem_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_red_mushroom",
+      "has_mushroom_stem",
+      "has_red_mushroom_block_from_red_mushroom_recipe",
+      "has_red_mushroom_block_from_mushroom_stem_recipe",
+      "has_red_mushroom_block_from_mushroom_stem_woodcutting_recipe"
+    ]
+  ]
+}

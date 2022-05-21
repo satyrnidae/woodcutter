@@ -1,0 +1,30 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": ["woodcutter:oak_wood_woodcutting"]
+  },
+  "criteria": {
+    "has_oak_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:oak_log"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oak_log",
+      "has_the_recipe"
+    ]
+  ]
+}

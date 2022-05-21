@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:acacia_stairs_from_acacia_log_woodcutting",
+      "woodcutter:acacia_stairs_from_acacia_planks_woodcutting",
+      "woodcutter:acacia_stairs_from_acacia_wood_woodcutting",
+      "woodcutter:acacia_stairs_from_stripped_acacia_log_woodcutting",
+      "woodcutter:acacia_stairs_from_stripped_acacia_wood_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_acacia_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:acacia_logs"
+          }
+        ]
+      }
+    },
+    "has_acacia_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:acacia_planks"]
+          }
+        ]
+      }
+    },
+    "has_acacia_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:acacia_stairs_from_acacia_log_woodcutting"
+      }
+    },
+    "has_acacia_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:acacia_stairs_from_acacia_planks_woodcutting"
+      }
+    },
+    "has_acacia_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:acacia_stairs_from_acacia_wood_woodcutting"
+      }
+    },
+    "has_stripped_acacia_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:acacia_stairs_from_stripped_acacia_log_woodcutting"
+      }
+    },
+    "has_stripped_acacia_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:acacia_stairs_from_stripped_acacia_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia_log_recipe",
+      "has_acacia_planks_recipe",
+      "has_acacia_wood_recipe",
+      "has_stripped_acacia_log_recipe",
+      "has_stripped_acacia_wood_recipe",
+      "has_acacia_logs",
+      "has_acacia_planks"
+    ]
+  ]
+}

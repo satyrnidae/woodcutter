@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:warped_slab_from_warped_stem_woodcutting",
+      "woodcutter:warped_slab_from_warped_planks_woodcutting",
+      "woodcutter:warped_slab_from_warped_hyphae_woodcutting",
+      "woodcutter:warped_slab_from_stripped_warped_stem_woodcutting",
+      "woodcutter:warped_slab_from_stripped_warped_hyphae_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_warped_stems": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:warped_stems"
+          }
+        ]
+      }
+    },
+    "has_warped_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:warped_planks"]
+          }
+        ]
+      }
+    },
+    "has_warped_stem_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:warped_slab_from_warped_stem_woodcutting"
+      }
+    },
+    "has_warped_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:warped_slab_from_warped_planks_woodcutting"
+      }
+    },
+    "has_warped_hyphae_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:warped_slab_from_warped_hyphae_woodcutting"
+      }
+    },
+    "has_stripped_warped_stem_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:warped_slab_from_stripped_warped_stem_woodcutting"
+      }
+    },
+    "has_stripped_warped_hyphae_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:warped_slab_from_stripped_warped_hyphae_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_stem_recipe",
+      "has_warped_planks_recipe",
+      "has_warped_hyphae_recipe",
+      "has_stripped_warped_stem_recipe",
+      "has_stripped_warped_hyphae_recipe",
+      "has_warped_stems",
+      "has_warped_planks"
+    ]
+  ]
+}

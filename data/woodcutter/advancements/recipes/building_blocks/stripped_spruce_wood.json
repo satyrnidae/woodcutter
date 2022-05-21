@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_spruce_wood_from_spruce_wood_woodcutting",
+      "woodcutter:stripped_spruce_wood_from_stripped_spruce_log_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_spruce_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:spruce_wood"]
+          }
+        ]
+      }
+    },
+    "has_stripped_spruce_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_spruce_log"]
+          }
+        ]
+      }
+    },
+    "has_stripped_spruce_wood_from_spruce_wood_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_spruce_wood_from_spruce_wood_woodcutting"
+      }
+    },
+    "has_stripped_spruce_wood_from_stripped_spruce_log_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_spruce_wood_from_stripped_spruce_log_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_spruce_wood",
+      "has_stripped_spruce_log",
+      "has_stripped_spruce_wood_from_spruce_wood_woodcutting_recipe",
+      "has_stripped_spruce_wood_from_stripped_spruce_log_woodcutting_recipe"
+    ]
+  ]
+}

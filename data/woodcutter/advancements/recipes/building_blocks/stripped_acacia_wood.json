@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_acacia_wood_from_acacia_wood_woodcutting",
+      "woodcutter:stripped_acacia_wood_from_stripped_acacia_log_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_acacia_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:acacia_wood"]
+          }
+        ]
+      }
+    },
+    "has_stripped_acacia_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_acacia_log"]
+          }
+        ]
+      }
+    },
+    "has_stripped_acacia_wood_from_acacia_wood_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_acacia_wood_from_acacia_wood_woodcutting"
+      }
+    },
+    "has_stripped_acacia_wood_from_stripped_acacia_log_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_acacia_wood_from_stripped_acacia_log_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_acacia_wood",
+      "has_stripped_acacia_log",
+      "has_stripped_acacia_wood_from_acacia_wood_woodcutting_recipe",
+      "has_stripped_acacia_wood_from_stripped_acacia_log_woodcutting_recipe"
+    ]
+  ]
+}

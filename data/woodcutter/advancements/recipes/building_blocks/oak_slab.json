@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:oak_slab_from_oak_log_woodcutting",
+      "woodcutter:oak_slab_from_oak_planks_woodcutting",
+      "woodcutter:oak_slab_from_oak_wood_woodcutting",
+      "woodcutter:oak_slab_from_stripped_oak_log_woodcutting",
+      "woodcutter:oak_slab_from_stripped_oak_wood_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_oak_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:oak_logs"
+          }
+        ]
+      }
+    },
+    "has_oak_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:oak_planks"]
+          }
+        ]
+      }
+    },
+    "has_oak_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_slab_from_oak_log_woodcutting"
+      }
+    },
+    "has_oak_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_slab_from_oak_planks_woodcutting"
+      }
+    },
+    "has_oak_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_slab_from_oak_wood_woodcutting"
+      }
+    },
+    "has_stripped_oak_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_slab_from_stripped_oak_log_woodcutting"
+      }
+    },
+    "has_stripped_oak_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:oak_slab_from_stripped_oak_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oak_log_recipe",
+      "has_oak_planks_recipe",
+      "has_oak_wood_recipe",
+      "has_stripped_oak_log_recipe",
+      "has_stripped_oak_wood_recipe",
+      "has_oak_logs",
+      "has_oak_planks"
+    ]
+  ]
+}

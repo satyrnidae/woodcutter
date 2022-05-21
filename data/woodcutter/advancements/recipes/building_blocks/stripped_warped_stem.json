@@ -1,0 +1,32 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_warped_stem_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_warped_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:warped_stem"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_warped_stem_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_stem",
+      "has_the_recipe"
+    ]
+  ]
+}

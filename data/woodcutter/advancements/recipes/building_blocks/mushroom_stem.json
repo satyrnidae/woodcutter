@@ -1,0 +1,67 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:mushroom_stem_from_brown_mushroom_block_woodcutting",
+      "woodcutter:mushroom_stem_from_red_mushroom_block_woodcutting",
+      "woodcutter:mushroom_stem_from_brown_mushroom_block",
+      "woodcutter:mushroom_stem_from_red_mushroom_block"
+    ]
+  },
+  "criteria": {
+    "has_brown_mushroom_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:brown_mushroom_block"]
+          }
+        ]
+      }
+    },
+    "has_red_mushroom_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:red_mushroom_block"]
+          }
+        ]
+      }
+    },
+    "has_mushroom_stem_from_brown_mushroom_block_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mushroom_stem_from_brown_mushroom_block_woodcutting"
+      }
+    },
+    "has_mushroom_stem_from_red_mushroom_block_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mushroom_stem_from_red_mushroom_block_woodcutting"
+      }
+    },
+    "has_mushroom_stem_from_brown_mushroom_block_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mushroom_stem_from_brown_mushroom_block"
+      }
+    },
+    "has_mushroom_stem_from_red_mushroom_block_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mushroom_stem_from_red_mushroom_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_brown_mushroom_block",
+      "has_red_mushroom_block",
+      "has_mushroom_stem_from_brown_mushroom_block_woodcutting_recipe",
+      "has_mushroom_stem_from_red_mushroom_block_woodcutting_recipe",
+      "has_mushroom_stem_from_brown_mushroom_block_recipe",
+      "has_mushroom_stem_from_red_mushroom_block_recipe"
+    ]
+  ]
+}
