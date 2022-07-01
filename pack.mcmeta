@@ -1,12 +1,18 @@
 {
   "pack": {
-    "pack_format": 8,
+    "pack_format": 9,
     "description": "Woodcutter"
   },
   "meta": {
     "author": "Isabel Maskrey (saturniidae)",
     "website": "https://satyrn.dev",
-    "version": "1.0.0",
-    "baseArchiveName": "woodcutter"
+    "version": "1.1.0",
+    "baseArchiveName": "woodcutter",
+    "changelog": {
+      "1.1.0": [
+        "Update pack format to 9",
+        "Add fence gate crafting, one log to one fence gate"
+      ]
+    }
   }
 }
