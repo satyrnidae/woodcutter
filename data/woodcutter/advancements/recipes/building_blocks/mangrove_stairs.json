@@ -1,0 +1,75 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:mangrove_stairs_from_mangrove_log_woodcutting",
+      "woodcutter:mangrove_stairs_from_mangrove_planks_woodcutting",
+      "woodcutter:mangrove_stairs_from_mangrove_wood_woodcutting",
+      "woodcutter:mangrove_stairs_from_stripped_mangrove_log_woodcutting",
+      "woodcutter:mangrove_stairs_from_stripped_mangrove_wood_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_mangrove_logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:mangrove_logs"
+          }
+        ]
+      }
+    },
+    "has_mangrove_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:mangrove_planks"]
+          }
+        ]
+      }
+    },
+    "has_mangrove_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mangrove_stairs_from_mangrove_log_woodcutting"
+      }
+    },
+    "has_mangrove_planks_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mangrove_stairs_from_mangrove_planks_woodcutting"
+      }
+    },
+    "has_mangrove_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mangrove_stairs_from_mangrove_wood_woodcutting"
+      }
+    },
+    "has_stripped_mangrove_log_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mangrove_stairs_from_stripped_mangrove_log_woodcutting"
+      }
+    },
+    "has_stripped_mangrove_wood_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:mangrove_stairs_from_stripped_mangrove_wood_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mangrove_log_recipe",
+      "has_mangrove_planks_recipe",
+      "has_mangrove_wood_recipe",
+      "has_stripped_mangrove_log_recipe",
+      "has_stripped_mangrove_wood_recipe",
+      "has_mangrove_logs",
+      "has_mangrove_planks"
+    ]
+  ]
+}

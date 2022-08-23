@@ -1,0 +1,51 @@
+{
+  "parent": "woodcutter:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woodcutter:stripped_mangrove_wood_from_mangrove_wood_woodcutting",
+      "woodcutter:stripped_mangrove_wood_from_stripped_mangrove_log_woodcutting"
+    ]
+  },
+  "criteria": {
+    "has_mangrove_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:mangrove_wood"]
+          }
+        ]
+      }
+    },
+    "has_stripped_mangrove_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:stripped_mangrove_log"]
+          }
+        ]
+      }
+    },
+    "has_stripped_mangrove_wood_from_mangrove_wood_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_mangrove_wood_from_mangrove_wood_woodcutting"
+      }
+    },
+    "has_stripped_mangrove_wood_from_stripped_mangrove_log_woodcutting_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woodcutter:stripped_mangrove_wood_from_stripped_mangrove_log_woodcutting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mangrove_wood",
+      "has_stripped_mangrove_log",
+      "has_stripped_mangrove_wood_from_mangrove_wood_woodcutting_recipe",
+      "has_stripped_mangrove_wood_from_stripped_mangrove_log_woodcutting_recipe"
+    ]
+  ]
+}

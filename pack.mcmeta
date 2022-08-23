@@ -1,14 +1,24 @@
 {
   "pack": {
-    "pack_format": 9,
+    "pack_format": 10,
     "description": "Woodcutter"
   },
   "meta": {
     "author": "Isabel Maskrey (saturniidae)",
     "website": "https://satyrn.dev",
-    "version": "1.1.0",
+    "version": "1.2.2",
     "baseArchiveName": "woodcutter",
     "changelog": {
+      "1.2.2": [
+        "Add mangrove advancements to unlock recipes"
+      ],
+      "1.2.1": [
+        "Add stripped mangrove logs and wood"
+      ],
+      "1.2.0": [
+        "Update pack format to 10",
+        "Add recipes for mangrove logs"
+      ],
       "1.1.0": [
         "Update pack format to 9",
         "Add fence gate crafting, one log to one fence gate"
